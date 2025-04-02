@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "longitudinal-arm-swing"
+version = "0.1.0"
+description = ""
+authors = ["Erikpostt <erik_post_6@hotmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+python-dotenv = "^1.1.0"
+pandas = "^2.2.3"
+pyarrow = "^19.0.1"
+tabulate = "^0.9.0"
+ipykernel = "^6.29.5"
+matplotlib = "^3.10.1"
+seaborn = "^0.13.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
