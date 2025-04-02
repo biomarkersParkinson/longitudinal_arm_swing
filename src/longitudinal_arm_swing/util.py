@@ -7,7 +7,7 @@ import warnings
 
 sys.path.append(str(Path("src/").resolve()))
 
-from lng_arm_swing.constants import *
+from longitudinal_arm_swing.constants import *
 
 def convert_defaultdict_to_dict(d):
     if isinstance(d, defaultdict):

@@ -509,8 +509,8 @@ for dataset in DATASETS:
     srm_remaining_ids_after_final_weeks_exclusion = [id for id in srm_remaining_ids_after_start_weeks_exclusion if id not in ids_without_valid_end_weeks]
 
     base_exclude_srm_measurement = {
-        'No valid arm swing data in weeks 2, 4, 6': sorted(ids_without_valid_start_weeks),
-        'No valid arm swing data in weeks 96, 98, 100 (PPP, DeNovo) / 48, 50, 52 (Controls)': sorted(ids_without_valid_end_weeks),
+        'No valid arm swing data in first 6 bi-weeks': sorted(ids_without_valid_start_weeks),
+        'No valid arm swing data in final 6 bi-weeks': sorted(ids_without_valid_end_weeks),
     }
 
     excluded_ids_by_category['srm']['measurement'][dataset], ids_remaining_after_exclusions['srm'][dataset] = determine_excluded_ids_med_split(
